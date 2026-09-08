@@ -30,12 +30,12 @@
   .panel.s .num{color:var(--tally)}.panel.t .num{color:var(--signal)}.panel.w .num{color:var(--amber)}
   .panel p{margin:0;color:var(--dim);font-size:15px}
   .btn{display:inline-block;background:var(--tally);color:#fff;text-decoration:none;font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;font-weight:900;font-stretch:condensed;text-transform:uppercase;letter-spacing:1px;padding:14px 22px;border-radius:6px;box-shadow:0 3px 0 rgba(0,0,0,.5)}
-  section.legal{margin-top:56px;padding-top:24px;border-top:1px solid var(--line)}
-  section.legal h2{font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;font-weight:900;font-stretch:condensed;text-transform:uppercase;font-size:26px;margin:28px 0 8px}
-  section.legal h4{margin:18px 0 4px;font-size:15px}
-  section.legal p{color:var(--dim);font-size:15px;margin:0 0 6px}
+  section.about{margin-top:56px;padding-top:24px;border-top:1px solid var(--line)}
+  section.about h2{font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;font-weight:900;font-stretch:condensed;text-transform:uppercase;font-size:26px;margin:28px 0 8px}
+  section.about p{color:var(--dim);font-size:15px;margin:0 0 6px}
   a{color:#fff}
   footer{margin-top:40px;color:var(--dim);font-size:13px}
+  nav{margin:32px 0 0}
   nav a{color:var(--dim);text-decoration:none;margin-right:16px;font-size:13px;text-transform:uppercase;letter-spacing:1.5px}
 </style>
 </head>
@@ -58,37 +58,13 @@
     <div class="panel w"><div class="num">03</div><h3>Switching</h3><p>Programm, Preview, Cut/Auto, Mix/Dip/Wipe/DVE, Bild-im-Bild und Aufnahme – direkt vom iPhone.</p></div>
   </div>
 
-  <nav><a href="#datenschutz">Datenschutz</a><a href="#impressum">Impressum</a><a href="mailto:neroud@icloud.com">Support</a></nav>
-
-  <section class="legal" id="datenschutz">
-    <h2>Datenschutzerklärung</h2>
-    <p>Stand: 07.09.2026</p>
-    <h4>Verantwortlicher</h4>
-    <p>Luma Media, Neroud Suleiman, Fuhrenkamp 26, 21629 Neu Wulmstorf, neroud@icloud.com</p>
-    <h4>Welche Daten verarbeitet Streamee?</h4>
-    <p>Streamee verbindet sich in deinem Auftrag mit deinem YouTube-Konto, um Stream-Schlüssel und Livestream-Sendungen anzulegen, anzuzeigen und zu beenden. Dazu erhält die App nach deiner Zustimmung ein Zugriffstoken von Google (OAuth 2.0).</p>
-    <h4>Wo werden Daten gespeichert?</h4>
-    <p>Das Zugriffstoken wird ausschließlich im geschützten Schlüsselbund (Keychain) deines Geräts gespeichert. Die zuletzt geladene Liste deiner Stream-Schlüssel und die IP-Adresse deines ATEM werden lokal auf dem Gerät gespeichert. Streamee betreibt keinen eigenen Server. Es werden keine Daten an den Anbieter oder Dritte übertragen.</p>
-    <h4>Welche Dienste werden kontaktiert?</h4>
-    <p>Google / YouTube Data API (googleapis.com) zur Verwaltung deiner Livestreams. Es gilt die Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Dein ATEM im lokalen Netzwerk – nur wenn du „Senden an ATEM“, Tally oder Switching nutzt.</p>
-    <h4>Nutzung von Google-Nutzerdaten</h4>
-    <p>Streamees Nutzung von Informationen aus Google-APIs entspricht der Google API Services User Data Policy einschließlich der Limited-Use-Anforderungen. Die Daten werden nur genutzt, um die beschriebenen Funktionen bereitzustellen.</p>
-    <h4>Analyse, Werbung, Tracking</h4>
-    <p>Streamee enthält keine Analyse-Tools, keine Werbung und kein Tracking.</p>
-    <h4>Widerruf</h4>
-    <p>Du kannst den Zugriff jederzeit in der App („YouTube-Konto trennen“) oder unter <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> widerrufen. Damit werden alle Token auf dem Gerät gelöscht.</p>
-    <h4>Deine Rechte</h4>
-    <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung. Da Streamee keine Daten außerhalb deines Geräts speichert, bestehen beim Anbieter keine personenbezogenen Daten von dir. Fragen: neroud@icloud.com</p>
+  <section class="about">
+    <h2>Wie Streamee mit YouTube arbeitet</h2>
+    <p>Streamee verbindet sich auf deinen Wunsch einmalig über Google-Anmeldung (OAuth 2.0) mit deinem YouTube-Konto. Die App liest deinen dauerhaften Stream-Schlüssel aus, legt auf Wunsch neue Livestream-Sendungen an und übergibt Server-URL und Schlüssel direkt an deinen Blackmagic ATEM im lokalen Netzwerk.</p>
+    <p>Das Zugriffstoken bleibt im geschützten Schlüsselbund deines Geräts. Streamee betreibt keinen eigenen Server, überträgt nichts an Dritte und enthält weder Werbung noch Tracking. Alle Einzelheiten stehen in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
   </section>
 
-  <section class="legal" id="impressum">
-    <h2>Impressum</h2>
-    <p>Angaben gemäß § 5 DDG</p>
-    <p>Luma Media<br>Inhaber: Neroud Suleiman<br>Fuhrenkamp 26<br>21629 Neu Wulmstorf<br>Deutschland</p>
-    <p>E-Mail: neroud@icloud.com</p>
-    <p>Verantwortlich für den Inhalt: Neroud Suleiman, Anschrift wie oben</p>
-    <p>ATEM und Blackmagic Design sind Marken der Blackmagic Design Pty. Ltd. YouTube und Google sind Marken der Google LLC. Streamee ist ein unabhängiges Produkt und steht in keiner Verbindung zu diesen Unternehmen.</p>
-  </section>
+  <nav><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a><a href="mailto:neroud@icloud.com">Support</a></nav>
 
   <footer>© 2026 Luma Media · Streamee</footer>
 </div>
